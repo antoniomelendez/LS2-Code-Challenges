@@ -22,3 +22,69 @@
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
  */
+ class NPC {
+   constructor() {
+     hp: 100,
+     strength: 25,
+     speed: 50
+   }
+ }
+ class Humanoid extends NPC {
+   constructor(race) {
+     super(race);
+     this.race = race;
+   }
+   if (this.race === 'Human') {
+     const human = {
+     hp: 100,
+     strength: 35,
+     speed: 50,
+    }
+   }
+   if (this.race === 'Elf') {
+     const elf = {
+     hp: 100,
+     strength: 25,
+     speed: 75,
+    }
+   }
+   if (this.race === 'Orc') {
+     const orc = {
+     hp: 125,
+     strength: 50,
+     speed: 25,
+    }
+   }
+ }
+ class Animal extends NPC {
+   constructor(beast) {
+     super(beast);
+     this.beast = beast;
+   }
+   if (this.beast === 'Bear') {
+     const bear = {
+     hp: 200,
+     strength: 100,
+     speed: 60,
+    }
+   }
+   if (this.beast === 'Wolf') {
+     const wolf = {
+     hp: 100,
+     strength: 60,
+     speed: 80,
+    }
+   }
+ }
+ class Plant extends NPC{
+   constructor(choice) {
+     super(choice);
+     this.choice = choice;
+   }
+   if (this.choice === 'FleshEatingDaisy')
+   const plant = {
+     hp: 50,
+     strength: 20,
+     speed: 20
+   }
+ }

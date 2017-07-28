@@ -22,5 +22,13 @@
 */
 
 const bubbleSort = (arr) => {
-  //code here
+  for (let i = 0; i < arr.length - 1; i++) { 
+    for (let j = 0; j < arr.length - i - 1; j++) { // last i elements are already in place make the size of the search smaller.
+      if (arr[j] > arr[j+1]) {
+        let temp = arr[j]; // j is larger save it to temp
+        arr[j] = arr[j+1]; // j + 1 is small so it need to go to was j was.
+        arr[j+1] = temp; // temp has the value of j and since it is larger it needs to be moved one spot further down the array
+      }
+    }
+  }
 };
